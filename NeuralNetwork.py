@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from torch.utils.data import DataLoader, TensorDataset
 
-data = pd.read_csv('../dataset.csv')
+data = pd.read_csv('dataset.csv')
 
 # Preprocesar los datos
 dataset = data.drop('PP', axis=1).values
